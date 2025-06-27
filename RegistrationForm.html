@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+ <html>
+  <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Taj Hotels </title>
+  
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Taj Hotels </title>
+
+  
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: silver;
+       
+      }
+
+      h1 {
+        text-align: center;
+        font-family: cursive;
+      }
+
+      form {
+        background-color: #fff;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 25px;
+        border-radius: 10px;
+        
+      }
+
+      label {
+        display: inline-block;
+        width: 160px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        vertical-align: top;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="date"],
+      input[type="file"],
+      select,
+      textarea {
+        width: 60%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      .radio-group {
+        margin-left: 160px;
+        margin-bottom: 15px;
+      }
+
+      .radio-group label {
+        margin-right: 20px;
+        font-weight: normal;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #2c80b4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center><h1> WELCOME TO TAJ HOTELS</h1></center>
+    <hr>
+    <form action="Response.html" target="_blank" method="post">
+
+      <label for="name">Full Name: </label>
+      <input type="text" id="name" name="guestName" placeholder="Please Enter Your Name" maxlength="50" minlength="3" required>
+      <br><br>
+
+      <label for="age">Age: </label>
+      <input type="Number" id="age" name="age" placeholder="Please Enter Your Age" max="100" min="18" required>
+      <br><br>
+
+      <label for="Gender"> Gender: </label>
+      <br><br>
+      <label for="Male"> Male</label>
+      <input type="radio" id="Male" value="Male" name="Gender" checked>
+      <label for="Female">Female</label>
+      <input type="radio" id="Female" value="Female" name="Gender">
+      <label for="Other"> Other</label>
+      <input type="radio" id="Other" value="Other" name="Gender">
+      <br><br>
+
+      <label for="PHNO"> Mobile Number: </label>
+      <input type="tel" id="PHNO" name="PHNO" placeholder="1234567890" pattern="[0-9]{10}" maxlength="10" required>
+      <br><br>
+
+      <label for="Email">Email: </label>
+      <input type="Email" id="Email" name="email" placeholder="example@gmail.com" required>
+      <br><br>
+
+      <label for="Check-in"> Check-in Date: </label>
+      <input type="Date" id="Check-in" name="check-in date" required>
+      <br><br>
+
+      <label for="Check-out"> Check-out Date: </label>
+      <input type="Date" id="Check-out" name="check-out date" required>
+      <br><br>
+
+      <label for="roomType"> Room Type</label>
+      <select id="roomType" name="roomType" required>
+        <option value=""> --Select RoomType-- </option>
+        <option value="Single"> Single </option>
+        <option value="Double"> Double </option>
+        <option value="Deluxe"> Deluxe </option>
+        <option value="Suite"> Suite </option>	
+      </select>	
+      <br><br>
+
+      <label>Payment Method</label>
+      <br>
+      <div class="radio-group">
+        <label> Cash</label>
+        <input type="radio" name="pay" value="Cash" checked>
+        <label> Credit Card</label>
+        <input type="radio" name="pay" value="Credit Card">
+        <label> UPI</label>
+        <input type="radio" name="pay" value="UPI">
+        <label> Debit Card</label>
+        <input type="radio" name="pay" value="Debit Card">
+      </div>
+
+      <label>UPI / Card Number</label>
+      <input type="text" name="paymentDetails" placeholder="Optional, if card or UPI">
+      <br><br>
+
+      <label for="IdProof"> ID Proof: </label>
+      <input type="file" id="IdProof" name="IdProof" required>
+      <br><br>
+
+      <label for="SpecialRequests"> Any Special Requests: </label>
+      <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="40" placeholder="Write any preferences or special requests here..."></textarea>
+      <br><br>
+       Already have an account? <a href="LoginForm.html">Login here</a>
+      <center>
+        <button type="reset">Clear The Form</button>
+        <br><br>
+        <button type="submit">Register</button>
+      </center>
+
+    </form>
+  </body>
+</html>
